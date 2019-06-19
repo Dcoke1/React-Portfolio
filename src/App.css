@@ -1,0 +1,538 @@
+html {
+background-color: black;
+}
+
+body{
+font-family: Raleway;
+height: 4500px;
+}
+.wrapper {
+width: 100%;
+position: relative;
+z-index: 1;
+}
+
+/*=======================NAVIGATION STYLES======================*/
+
+#header {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+background-color: black;
+padding: 15px 15px 15px 30px;
+-webkit-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+box-shadow: 0 1px 6px 0 rgba(32,33,36,0.4);
+}
+.subHeader {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+.headroom-wrapper {
+height: 0px !important;
+}
+.App-logo {
+height: 7vmin;
+pointer-events: none;
+}
+.App-logo-span {
+color: #FFF;
+font: 35px Raleway;
+margin: 0px 10px;
+padding: 10px 10px; 
+position: relative;
+z-index: 0;
+pointer-events: none;
+}
+.navLinks {
+font-family: Raleway;
+margin: 0 auto;
+text-align: center;
+}
+.navLinks a {
+color: #FFF;
+text-decoration: none;
+font: 20px Raleway;
+margin: 0px 10px;
+padding: 20px 20px;
+position: relative;
+z-index: 0;
+cursor: pointer;
+}
+
+/* ==============NAVIGATION ANIMATION==================== */
+
+.circleBehind a:before, .circleBehind a:after {
+position: absolute;
+top: 22px;
+left: 50%;
+width: 50px;
+height: 50px;
+border: 4px solid #1d3f72;
+transform: translateX(-50%) translateY(-50%) scale(0.8);
+border-radius: 50%;
+background: transparent;
+content: "";
+opacity: 0;
+transition: all 0.3s;
+z-index: -1;
+}
+.circleBehind a:after {
+border-width: 2px;
+transition: all 0.4s;
+}
+.circleBehind a:hover:before {
+opacity: 1;
+transform: translateX(-50%) translateY(-50%) scale(1);
+}
+.circleBehind a:hover:after {
+opacity: 1;
+transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
+
+/*========================ABOUT STYLES========================*/
+
+#about{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-top: 10rem;
+background: #FFF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #4F6D85, #FFF, #FFF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #4F6D85, #FFF, #FFF);
+}
+.mypic {
+border-radius: 100rem;
+height: 55vmin;
+width: 55vmin;
+box-shadow: 0 1px 6px 0 rgba(32,33,36,0.7);
+}
+
+/***========================UNDER PIC HEADING AND SUB-HEADING STYLES========================***/
+
+h1 {
+font-weight: 700;
+font-size: 35px;
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+h2 {
+font-weight: 500;
+font-size: 20px;
+}
+
+/***========================SOCIAL MEDIA LINK STYLES/ANIMATIONS========================***/
+
+.socialbtns, .socialbtns ul, .socialbtns li {
+margin: 5px;
+margin-bottom: 2rem;
+padding: 5px;
+text-align: center;
+}
+.socialbtns li {
+list-style: none outside none;
+display: inline-block;
+}
+.socialbtns .fa {
+color: #FFF;
+background-color: #4F6D85;
+padding: 10px;
+border-radius: 200px;
+-moz-border-radius: 200px;
+-webkit-border-radius: 200px;
+-o-border-radius: 200px;
+transition: all ease 2s;
+-moz-transition: all ease 2s;
+-webkit-transition: all ease 2s;
+-o-transition: all ease 2s;
+transform: rotate(-360deg);
+-moz-transform: rotate(-360deg);
+-webkit-transform: rotate(-360deg);
+-o-transform: rotate(-360deg);
+box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+.socialbtns .fa:hover {
+transition: all ease 1s;
+-moz-transition: all ease 1s;
+-webkit-transition: all ease 1s;
+-o-transition: all ease 1s;
+transform: rotate(360deg);
+-moz-transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+-o-transform: rotate(360deg);
+}
+
+/***========================SKILLS SECTION STYLES========================***/
+
+.skills {
+background-image: url('Components/assets/web.jpg');
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+color: black;
+height: 36rem;
+width: 100%;
+}
+.skillsIcons {
+display: flex;
+flex-direction: row;
+color: white;
+text-align: center;
+flex-wrap: wrap;
+padding-top: 4rem;
+padding-left: 2rem;
+padding-right: 2rem;
+width: 100%;
+}
+.subSkills{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 25%;
+padding-right: 20px;
+padding-left: 20px;
+}
+.fa-laptop-code, .fa-address-card, .fa-handshake, .fa-running {
+font-size: 5rem;
+padding-bottom: 5px;
+}
+.fa-laptop-code:hover, .fa-address-card:hover, .fa-handshake:hover, .fa-running:hover {
+display: inline-block;
+-moz-animation: pulse 2s infinite linear;
+-o-animation: pulse 2s infinite linear;
+-webkit-animation: pulse 2s infinite linear;
+animation: pulse 2s infinite linear;
+}
+.skillsSpan {
+font-size: 28px;
+padding-bottom: 5px;
+font-weight: 600;
+}
+.skillsP {
+margin: 0px; 
+}
+
+/***========================RESUME STYLES========================***/
+
+section {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+text-align: left;
+}
+.subHeading{
+text-align: left;
+}
+.cv-ul-left {
+display: flex;
+flex-direction: column;
+text-align: left;
+}
+.cv-ul-left li {
+list-style: disc;
+}
+ul {
+padding-inline-start: 16px;
+}
+article {
+margin: 2rem;
+text-align: center;
+}
+.cv {
+padding-top: 1rem;
+padding-bottom: 1rem;
+margin-top: 5rem;
+margin: 8rem 10rem 1rem 10rem;
+-webkit-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+.button, .button:hover {
+display: flex;
+justify-content: center;
+margin-bottom: 10rem;
+text-decoration: none;
+}
+.btn:hover {
+box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+
+/***========================PROJECTS STYLES========================***/
+
+.projectsBackground {
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100rem;
+background: #FFF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #4F6D85, #FFF, #FFF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #4F6D85, #FFF, #FFF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.card {
+box-shadow: 0 1px 6px 0 rgba(32,33,36,0.5);
+}
+.cardLeft{
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-left: 10rem;
+margin-right: 10rem;
+margin-bottom: 5rem;
+font-size: 30px;
+}
+.cardLeft p{
+padding-left: 15px;
+}
+.cardRight{
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+margin-left: 10rem;
+margin-right: 10rem;
+margin-bottom: 5rem;
+font-size: 30px;
+}
+.cardRight p{
+padding-right: 15px;
+}
+.card-body {
+text-align: center;
+}
+.col {
+padding: 0px;
+}
+
+/***========================FOOTER STYLES========================***/
+
+.footer {
+height: 4rem;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.fa-react {
+color: lightblue;
+}
+
+/***========================MEDIA QUERIES STYLES========================***/
+
+@media screen and (max-width: 1045px) {
+.skillsSpan {
+font-size: 23px; 
+}
+}
+@media screen and (max-width: 1031px) {
+.skillsSpan {
+font-size: 22px; 
+}
+.skills {
+height: 37rem;
+}
+}
+@media screen and (max-width: 997px) {
+.skills {
+height: 41rem;
+}
+.cv {
+margin: 8rem 5rem 1rem 5rem;
+}
+.cardLeft, .cardRight {
+margin-left: 5rem;
+margin-right: 5rem;
+}
+}
+@media screen and (max-width: 894px) {
+.skills {
+height: 45rem;
+}
+}
+@media screen and (max-width: 802px) {
+.skills {
+height: 46rem;
+}
+}
+
+/***========================MOBILE STYLES @ 800px WIDTH========================***/
+
+@media screen and (max-width: 800px) {
+#header{
+display: none;
+}
+.skills {
+display: none;
+}
+.navbar {
+margin: 0 !important;
+background-color: black;
+padding: 1rem 2rem 1rem 2rem;
+}
+#nav-icon1 span {
+background: white !important;
+}
+.nav-item a {
+color: #FFF;
+letter-spacing: rem;
+}
+.navbar-nav, .mr-auto {
+color: #FFF;
+font-size: 22px;
+}
+.mypic {
+height: 55vmin;
+width: 55vmin;
+}
+.container {
+padding: 0;
+margin: 0;
+max-width: 100% !important;
+text-align: center;
+-webkit-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+box-shadow: 0 1px 6px 0 rgba(32,33,36,0.4);
+}
+#about{
+padding-top: 13rem;
+}
+.skillsSpan {
+color: #71c2cc;
+/*
+color: #d8ebf9:
+color: #5699d2;
+color: #1d3f72;
+*/
+}
+ {
+
+background-color: #d8ebf9;
+
+}
+.mobileBackground {
+background-image: url('Components/assets/web.jpg');
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+color: black;
+height: 30rem;
+position: relative;
+z-index: 0;
+display: flex;
+flex-direction: row;
+overflow-x: auto;
+}
+.mobileBackground::-webkit-scrollbar {
+ display: none;
+}
+.mobileSkills {
+display: flex;
+flex-direction: row;
+overflow-x: auto;
+color: white;
+padding: 2rem 0rem 2rem 0rem;
+}
+.mobileSub {
+background: rgb(79, 109, 133, 0.7);
+min-width: 350px;
+padding: 1rem 1rem 0rem 1rem;
+margin-right: 5rem;
+text-align: center;
+box-shadow: 0 1px 6px 0 rgba(32,33,36,0.7);
+}
+.mobileSubL {
+margin-left: 5rem;
+}
+.mobileSubR {
+margin-right: 5rem;
+}
+.fa-laptop-code, .fa-address-card, .fa-handshake, .fa-running {
+display: inline-block;
+width: 100%;
+text-align: center;
+font-size: 8rem;
+}
+.button {
+margin-bottom: 5rem;
+}
+.cv {
+margin-top: 5rem;
+margin-right: 2rem;
+margin-left: 2rem;
+}
+article {
+margin: 1.5rem;
+}
+.cardLeft, .cardRight {
+display: flex;
+flex-direction: column;
+margin-right: 2rem;
+margin-left: 2rem;
+}
+.cardLeftP, .cardRightP {
+font-size: 25px;
+padding-top: 20px;
+text-align: center;
+}
+.projectsBackground {
+height: 110rem;
+}
+}
+
+/***========================MOBILE STYLES @ 450px WIDTH========================***/
+
+@media screen and (max-width: 600px) {
+.projectsBackground {
+height: 115rem;
+}
+.cv {
+margin-right: 1rem;
+margin-left: 1rem;
+}
+article {
+margin: 1rem;
+}
+}
+
+/***========================MOBILE STYLES @ 450px WIDTH========================***/
+
+@media screen and (max-width: 450px) {
+.App-logo-span {
+font-size: 28px;
+}
+ul {
+padding-inline-start: 16px;
+}
+#about {
+padding-top: 199px;
+padding-bottom: 1rem;
+}
+.cv p {
+font-size: 15px;
+}
+.cv li {
+font-size: 13px;
+}
+.projectsBackground {
+height: 120rem;
+}
+}
+
+/***========================MOBILE STYLES @ 375px WIDTH========================***/
+
+@media screen and (max-width: 375px) {
+.mypic {
+height: 65vmin;
+width: 65vmin;
+}
+#about {
+padding-top: 199px;
+padding-bottom: 1rem;
+}
+.cv p {
+font-size: 14px;
+}
+.cv li {
+font-size: 12px;
+}
+}
