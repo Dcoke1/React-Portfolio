@@ -14,7 +14,7 @@ class Resume extends Component {
 		<article>
 				      			<h3>Douglas J. Coke</h3>
 	      		  <h5>C: 954-551-0807  || E: Douglas.Coke@aol.com</h5>
- 		<h6><a href='https://www.linkedin.com/in/douglascoke/' target='_blank' rel="noopener noreferrer">linkedin.com/in/douglascoke</a> || <a href='https://www.freecodecamp.org/dcoke17' target='_blank' rel="noopener noreferrer">freecodecamp.org/dcoke17</a></h6><hr />
+ 		<h6><a className="cvLink" href='https://www.linkedin.com/in/douglascoke/' target='_blank' rel="noopener noreferrer">linkedin.com/in/douglascoke</a> || <a className="cvLink" href='https://www.freecodecamp.org/dcoke17' target='_blank' rel="noopener noreferrer">freecodecamp.org/dcoke17</a></h6><hr />
 							<strong>EDUCATION</strong><hr />
 
 <section><p><strong>University of Central Florida</strong>, Orlando, FL</p> <p>May 2017 — October 2017</p></section>

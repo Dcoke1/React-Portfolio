@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBCollapse, MDBContainer,
-MDBHamburgerToggler } from 'mdbreact';
+import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import Headroom from 'react-headroom';
 import MediaQuery from 'react-responsive';
 import logo from './assets/logo.svg';
@@ -25,31 +24,23 @@ class MobileNavigation extends Component{
   return (
   		<MediaQuery className="mobileHeader" query="(max-device-width: 800px)">
         <Headroom>
-          <MDBContainer>
-          <MDBNavbar color="amber lighten-4" light>
-            <MDBContainer>
-              <MDBNavbarBrand>
-                      <aside className='subHeader'>
-      <img src={logo} className="App-logo" alt="logo" /><span className="App-logo-span">Douglas Coke
-      </span></aside>
-              </MDBNavbarBrand>
-              <MDBHamburgerToggler color="#d3531a" id="hamburger1" onClick={()=> this.toggleSingleCollapse('collapse1')} />
-                <MDBCollapse isOpen={this.state.collapse1} navbar>
-                  <MDBNavbarNav left>
-                    <MDBNavItem active>
+          <div className="navBar" style={{height: '100px'}}>
+            <Layout fixedHeader>
+                <Header className='subHeader'>
+                <img src={logo} className="App-logo" alt="logo" /><span className="App-logo-span">
+                </span>
+
+                </Header>
+                <Drawer title="DC Portfolio">
+                    <Navigation className="navLinks">
                       <a href='#about'>About</a>
-                    </MDBNavItem>
-                    <MDBNavItem>
                       <a href='#resume'>Resume</a>
-                    </MDBNavItem>
-                    <MDBNavItem>
                       <a href='#projects'>Projects</a>
-                    </MDBNavItem>
-                  </MDBNavbarNav>
-                </MDBCollapse>
-            </MDBContainer>
-          </MDBNavbar>
-        </MDBContainer>
+                    </Navigation>
+                </Drawer>
+                <Content />
+            </Layout>
+          </div>
       </Headroom>
   	</MediaQuery>
 

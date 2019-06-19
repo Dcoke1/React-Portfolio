@@ -1,15 +1,15 @@
 html {
 background-color: black;
 }
+h1,h2,h3,h4,h5,h6,span,p,strong {
+font-family: Raleway !important;
+font: Raleway !important;
+}
 
 body{
-font-family: Raleway;
+font-family: Raleway !important;
+font: Raleway !important;
 height: 4500px;
-}
-.wrapper {
-width: 100%;
-position: relative;
-z-index: 1;
 }
 
 /*=======================NAVIGATION STYLES======================*/
@@ -29,9 +29,6 @@ display: flex;
 flex-direction: row;
 align-items: center;
 }
-.headroom-wrapper {
-height: 0px !important;
-}
 .App-logo {
 height: 7vmin;
 pointer-events: none;
@@ -42,7 +39,6 @@ font: 35px Raleway;
 margin: 0px 10px;
 padding: 10px 10px; 
 position: relative;
-z-index: 0;
 pointer-events: none;
 }
 .navLinks {
@@ -57,7 +53,6 @@ font: 20px Raleway;
 margin: 0px 10px;
 padding: 20px 20px;
 position: relative;
-z-index: 0;
 cursor: pointer;
 }
 
@@ -97,7 +92,7 @@ transform: translateX(-50%) translateY(-50%) scale(1.3);
 display: flex;
 flex-direction: column;
 align-items: center;
-padding-top: 10rem;
+padding-top: 5rem;
 background: #FFF;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to bottom, #4F6D85, #FFF, #FFF);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to bottom, #4F6D85, #FFF, #FFF);
@@ -113,13 +108,14 @@ box-shadow: 0 1px 6px 0 rgba(32,33,36,0.7);
 
 h1 {
 font-weight: 700;
-font-size: 35px;
+font-size: 40px;
 margin-top: 1rem;
 margin-bottom: 1rem;
 }
 h2 {
 font-weight: 500;
-font-size: 20px;
+font-size: 24px;
+line-height: 32px;
 }
 
 /***========================SOCIAL MEDIA LINK STYLES/ANIMATIONS========================***/
@@ -129,6 +125,7 @@ margin: 5px;
 margin-bottom: 2rem;
 padding: 5px;
 text-align: center;
+font-size: 3rem;
 }
 .socialbtns li {
 list-style: none outside none;
@@ -195,7 +192,7 @@ padding-right: 20px;
 padding-left: 20px;
 }
 .fa-laptop-code, .fa-address-card, .fa-handshake, .fa-running {
-font-size: 5rem;
+font-size: 6rem;
 padding-bottom: 5px;
 }
 .fa-laptop-code:hover, .fa-address-card:hover, .fa-handshake:hover, .fa-running:hover {
@@ -248,6 +245,12 @@ margin: 8rem 10rem 1rem 10rem;
 -webkit-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
 box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
 }
+.cvLink {
+color: #71c2cc;
+}
+.btn {
+font-size: 18px;
+}
 .button, .button:hover {
 display: flex;
 justify-content: center;
@@ -296,6 +299,10 @@ font-size: 30px;
 }
 .cardRight p{
 padding-right: 15px;
+}
+.cardLeftP p, .cardRightP p {
+font-size: 32px;
+line-height: 3rem;
 }
 .card-body {
 text-align: center;
@@ -364,21 +371,37 @@ display: none;
 .skills {
 display: none;
 }
-.navbar {
+.material-icons {
+font-size: 34px;
+}
+header {
 margin: 0 !important;
-background-color: black;
-padding: 1rem 2rem 1rem 2rem;
+height: 5500px;
+background: black !important;
+padding: 2rem 2rem 1rem 2rem;
+box-shadow: 1px 10px 10px rgba(0,0,0,0.1), 0 5px 12px rgba(0,0,0,0.7);
+z-index: 999;
 }
-#nav-icon1 span {
-background: white !important;
+.mdl-layout__drawer,  .mdl-layout__obfuscator {
+height: 5500px;
+max-height: 5500px;
+position: fixed;
+top: 0;
+ }
+.mdl-layout__header-row {
+height: 90px;
+padding: 0px 25px 0px 0px;
+flex-direction: row-reverse;
 }
-.nav-item a {
-color: #FFF;
-letter-spacing: rem;
+.mdl-layout__header .mdl-layout__drawer-button {
+ margin: 25px;
 }
-.navbar-nav, .mr-auto {
-color: #FFF;
-font-size: 22px;
+.mdl-layout__drawer > .mdl-layout-title {
+ text-align: center;
+}
+.subHeader {
+display: flex;
+flex-direction: row-reverse;
 }
 .mypic {
 height: 55vmin;
@@ -392,21 +415,11 @@ text-align: center;
 -webkit-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
 box-shadow: 0 1px 6px 0 rgba(32,33,36,0.4);
 }
-#about{
-padding-top: 13rem;
-}
 .skillsSpan {
 color: #71c2cc;
-/*
-color: #d8ebf9:
-color: #5699d2;
-color: #1d3f72;
-*/
 }
- {
-
-background-color: #d8ebf9;
-
+.skillsP {
+font-size: 15px;
 }
 .mobileBackground {
 background-image: url('Components/assets/web.jpg');
@@ -416,8 +429,6 @@ background-repeat: no-repeat;
 background-size: cover;
 color: black;
 height: 30rem;
-position: relative;
-z-index: 0;
 display: flex;
 flex-direction: row;
 overflow-x: auto;
@@ -444,7 +455,12 @@ box-shadow: 0 1px 6px 0 rgba(32,33,36,0.7);
 margin-left: 5rem;
 }
 .mobileSubR {
+background: rgb(79, 109, 133, 0.7);
+min-width: 0px;
+padding: .011rem .011rem 0rem .011rem;
 margin-right: 5rem;
+text-align: center;
+box-shadow: 0 0px 0px 0 rgba(32,33,36,0.1);
 }
 .fa-laptop-code, .fa-address-card, .fa-handshake, .fa-running {
 display: inline-block;
@@ -474,16 +490,22 @@ font-size: 25px;
 padding-top: 20px;
 text-align: center;
 }
+.cardLeftP p, .cardRightP p {
+font-size: 20px;
+}
 .projectsBackground {
-height: 110rem;
+height: 120rem;
 }
 }
 
-/***========================MOBILE STYLES @ 450px WIDTH========================***/
+/***========================MOBILE STYLES @ 600px WIDTH========================***/
 
 @media screen and (max-width: 600px) {
 .projectsBackground {
-height: 115rem;
+height: 120rem;
+}
+.skillsP {
+font-size: 15px;
 }
 .cv {
 margin-right: 1rem;
@@ -492,20 +514,33 @@ margin-left: 1rem;
 article {
 margin: 1rem;
 }
+.cardLeftP p, .cardRightP p {
+font-size: 18px;
+}
 }
 
 /***========================MOBILE STYLES @ 450px WIDTH========================***/
 
-@media screen and (max-width: 450px) {
-.App-logo-span {
-font-size: 28px;
+@media screen and (max-width: 455px) {
+.App-logo {
+height: 10vmin;
+}
+.material-icons {
+font-size: 38px;
 }
 ul {
 padding-inline-start: 16px;
 }
+h2 {
+line-height: 32px;
+margin-top: 0px;
+margin-bottom: 0px;
+}
+.socialbtns, .socialbtns ul, .socialbtns li {
+font-size: 2.5rem;
+}
 #about {
-padding-top: 199px;
-padding-bottom: 1rem;
+padding-top: 64px;
 }
 .cv p {
 font-size: 15px;
@@ -513,26 +548,31 @@ font-size: 15px;
 .cv li {
 font-size: 13px;
 }
+.btn {
+font-size: 15px;
+}
 .projectsBackground {
-height: 120rem;
+height: 125rem;
 }
 }
 
 /***========================MOBILE STYLES @ 375px WIDTH========================***/
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 380px) {
 .mypic {
 height: 65vmin;
 width: 65vmin;
 }
 #about {
-padding-top: 199px;
-padding-bottom: 1rem;
+padding-top: 64px;
 }
 .cv p {
 font-size: 14px;
 }
 .cv li {
 font-size: 12px;
+}
+.projectsBackground {
+height: 130rem;
 }
 }
