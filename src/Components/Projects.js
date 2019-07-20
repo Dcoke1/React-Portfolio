@@ -24,7 +24,7 @@ class Projects extends Component{
 	    <div className="cardLeftP">
 
 	    <ScrollAnimation animateIn='fadeIn'>
-	    	<p>Find your favorite Giphy! Search any category and save the Giphs you like. </p>
+	    	<p>Find your favorite Giphy! Search any category and save the Giphs you like. Powered by GiphyAPI </p>
 	    </ScrollAnimation>
 	    
 	    </div>
@@ -36,11 +36,11 @@ class Projects extends Component{
 	    <ScrollAnimation animateIn='fadeInRight'>
 	    <MDBCol>
 	      <MDBCard style={{ width: "22rem" }}>
-	        <MDBCardImage className="img-fluid view zoom" src="https://www.libertytravel.com/sites/default/files/styles/full_size/public/all%20inclusive-hero%20%281%29.jpg?itok=JjwsPBPZ" waves />
+	        <MDBCardImage className="img-fluid view zoom" src="http://whatsupnewp.com/wp-content/uploads/2015/12/Newspaper-Stack-Trans.png" waves />
 	        <MDBCardBody>
-	          <MDBCardTitle>Card Stack</MDBCardTitle>
+	          <MDBCardTitle>NewsApp</MDBCardTitle>
 
-	          <MDBBtn className="btn-warning" href="https://dcoke1.github.io/Card-Stack/" target="_blank" rel="noopener noreferrer">Try it out!</MDBBtn>
+	          <MDBBtn className="btn-warning" href="https://dcoke1.github.io/News-App/" target="_blank" rel="noopener noreferrer">Try it out!</MDBBtn>
 	        </MDBCardBody>
 	      </MDBCard>
 	    </MDBCol>
@@ -49,7 +49,7 @@ class Projects extends Component{
 	    <div className="cardRightP">
 
 	    <ScrollAnimation animateIn='fadeIn'>
-	    	<p>Explore the world through a list of destinations! </p>
+	    	<p>Search the latest Headlines across the globe with NewsApp! Powered by NewsAPI </p>
 	    </ScrollAnimation>
 
 	    </div>

@@ -23,7 +23,25 @@ class Resume extends Component {
 <section><p><strong>Freecodecamp.org</strong></p><p>October 2017 — Present</p></section>
 <p className='subHeading'><i>Full Stack Web Development</i></p><hr />
 
+							<strong>SKILLS</strong><hr />
+
+<ul className="cv-ul-left">
+ <div> React | Express | Node | JavaScript/Es6 | Html5 | Css3 | API integration | Mongo DB | Github | AdobeXD</div>
+</ul><hr />
+
 							<strong>EXPERIENCE</strong><hr />
+
+<section><p><strong>TrueTicket</strong> Orlando, FL</p> <p>July 2019  —-  Present</p></section>
+<p className='subHeading'><i>Senior UI/UX Developer</i></p>
+
+<ul className="cv-ul-left">
+<li>Design, create, test, and modify all aspects of the user interface with functionality and aesthetics in mind</li>
+<li>Clearly communicate research and design ideas to rest of the team and upper management</li> 
+<li>Analyze and translate user behavior and research into actionable data</li>
+<li>Create concepts, wireframes, and mockups that lead to intuitive user experiences</li>
+<li>Ensure website is optimized for various devices</li>
+<li>Collaborate with backend team for seamless data integration using Node and MongoDB</li>
+</ul>
 
 <section><p><strong>University of Central Florida</strong>, Orlando, FL</p> <p>April 2017  —-  Present</p></section>
 <p className='subHeading'><i>Web Developer/Bootcamp</i></p>
@@ -34,12 +52,9 @@ class Resume extends Component {
 <li> Skilled with managing JavaScript events and using JQuery to append data to HTML</li>
 <li> Experience sending AJAX request as well as manipulating API and API keys to access JSON objects</li>
 <li> Sound knowledge working with Node.js, NPM packages, and Express.js</li>
-<li> Working knowledge with React.js and React MDL</li>
-<li> Collaborating on teams submitting and merging project components using Github</li>
-<li> Working knowledge in MySQL querying data and CRUD</li>
 </ul>
 
-<section><p><strong>Duke Energy</strong>, Lake Mary, FL</p><p> December 2017  —  Present</p></section>
+<section><p><strong>Duke Energy</strong>, Lake Mary, FL</p><p> December 2017  —  July 2019</p></section>
 <p className='subHeading'><i>Customer Service Specialist</i></p>
 
 <ul className="cv-ul-left"> 
@@ -50,10 +65,7 @@ class Resume extends Component {
 </ul>
 
 <section><p><strong>Hilton Grand Vacations at Sea World</strong>, Orlando, FL</p> <p>August 2016 — December 2017</p></section>
-<p className='subHeading'><i>Guest Service Associate</i></p>                                                                                                                                      	           
-
-<section><p><strong>Red Lobster</strong>, North Miami/Orlando, FL</p> <p>March 2011 — August 2016</p></section>
-<p className='subHeading'><i>Server</i></p><hr />                                                                                                                                     			          
+<p className='subHeading'><i>Guest Service Associate</i></p><hr />                                                                                                                                     			          
 
 							<strong>VOLUNTEER EXPERIENCE</strong><hr />
 
@@ -64,12 +76,6 @@ class Resume extends Component {
 <li>Responsible for the social media campaign fundraiser at Boys Town which raised $810 in donations</li>
 <li>Planned and coordinated events for the children including an Orlando Magic Basketball game and catered dinner</li>
 <li>Worked in a team organizing fundraisers on and off campus totaling $3241 in monetary and non monetary contributions</li>
-</ul><hr />
-
-							<strong>ADDITIONAL SKILLS</strong><hr />
-
-<ul className="cv-ul-left">
- <li> HTML, CSS, JavaScript, Express, Node, React, JQuery, Bootstrap, AJAX, MySQL, Mongo DB, Github, Microsoft Office, AdobeXD</li>
 </ul>
 
 </article>
