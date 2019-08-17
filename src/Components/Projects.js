@@ -38,9 +38,9 @@ class Projects extends Component{
 	      <MDBCard style={{ width: "22rem" }}>
 	        <MDBCardImage className="img-fluid view zoom" src="http://whatsupnewp.com/wp-content/uploads/2015/12/Newspaper-Stack-Trans.png" waves />
 	        <MDBCardBody>
-	          <MDBCardTitle>NewsApp</MDBCardTitle>
+	          <MDBCardTitle>NewsAppToday</MDBCardTitle>
 
-	          <MDBBtn className="btn-warning" href="https://dcoke1.github.io/News-App/" target="_blank" rel="noopener noreferrer">Try it out!</MDBBtn>
+	          <MDBBtn className="btn-warning" href="https://newsapptoday.com" target="_blank" rel="noopener noreferrer">Try it out!</MDBBtn>
 	        </MDBCardBody>
 	      </MDBCard>
 	    </MDBCol>
@@ -49,7 +49,7 @@ class Projects extends Component{
 	    <div className="cardRightP">
 
 	    <ScrollAnimation animateIn='fadeIn'>
-	    	<p>Search the latest Headlines across the globe with NewsApp! Powered by NewsAPI </p>
+	    	<p>Search the latest Headlines across the globe with NewsAppToday! Powered by NewsAPI </p>
 	    </ScrollAnimation>
 
 	    </div>

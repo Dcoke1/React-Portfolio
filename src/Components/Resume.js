@@ -26,7 +26,7 @@ class Resume extends Component {
 							<strong>SKILLS</strong><hr />
 
 <ul className="cv-ul-left">
- <div> React | Express | Node | JavaScript/Es6 | Html5 | Css3 | API integration | Mongo DB | Github | AdobeXD</div>
+ <center><div> React | Express | Node | JavaScript/Es6 | Html5 | Css3 | API integration | Mongo DB | Github | AdobeXD</div></center>
 </ul><hr />
 
 							<strong>EXPERIENCE</strong><hr />
@@ -40,7 +40,8 @@ class Resume extends Component {
 <li>Analyze and translate user behavior and research into actionable data</li>
 <li>Create concepts, wireframes, and mockups that lead to intuitive user experiences</li>
 <li>Ensure website is optimized for various devices</li>
-<li>Collaborate with backend team for seamless data integration using Node and MongoDB</li>
+<li>Implement and maintain React codebase for scalability including api axio/fetch calls, react style hooks, managing event listeners, and component life cycles where necessary</li>
+<li>Script new components in JSX and unit test with Jest </li>
 </ul>
 
 <section><p><strong>University of Central Florida</strong>, Orlando, FL</p> <p>April 2017  —-  Present</p></section>
@@ -83,7 +84,7 @@ class Resume extends Component {
 </div>
 <div>
 <a className="button" href="https://docs.google.com/document/d/13iov9GPncbNR9O86GA7T1VegU6zxEs0pvZCR039UYFA/edit?usp=sharing" target="_blank" rel="noopener noreferrer" content="cv">
-<Button onClick={this.handleClick} variant="warning" bsPrefix="btn">Download Resume</Button>
+<Button variant="warning" bsPrefix="btn">Download Resume</Button>
 </a>
 </div>
 </React.Fragment>
