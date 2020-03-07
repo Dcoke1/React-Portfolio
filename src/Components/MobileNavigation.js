@@ -21,12 +21,14 @@ class MobileNavigation extends Component{
     });
   }
     render() {
+      const d = new Date().toDateString();
   return (
   		<MediaQuery className="mobileHeader" query="(max-device-width: 800px)">
         <Headroom>
           <div className="navBar" style={{height: '100px'}}>
             <Layout fixedHeader>
                 <Header className='subHeader'>
+                <span className="App-logo-span">{d}</span>
                 <img src={logo} className="App-logo" alt="logo" /><span className="App-logo-span">
                 </span>
 

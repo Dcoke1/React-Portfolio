@@ -517,14 +517,18 @@ position: fixed !important;
 }
 .mdl-layout__header-row {
 height: 90px;
-padding: 0px 25px 0px 0px;
+padding: 0px;
+margin: 0 auto 0 0;
 -webkit-box-orient: horizontal;
 -webkit-box-direction: reverse;
     -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
 }
+.App-logo-span {
+font-size: 28px;
+}
 .mdl-layout__header .mdl-layout__drawer-button {
- margin: 25px;
+display: none;
 }
 .mdl-layout__drawer > .mdl-layout-title {
  text-align: center;
