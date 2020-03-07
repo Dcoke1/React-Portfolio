@@ -1,6 +1,3 @@
-html {
-background-color: black;
-}
 h1,h2,h3,h4,h5,h6,span,p,strong {
 font-family: Raleway !important;
 font: Raleway !important;
@@ -9,7 +6,11 @@ font: Raleway !important;
 body{
 font-family: Raleway !important;
 font: Raleway !important;
-height: 4500px;
+background: #000000;
+height: 100%;
+}
+.wrapper {
+background: #FFFFFF;
 }
 
 /*=======================NAVIGATION STYLES======================*/
@@ -203,7 +204,7 @@ transition: all ease 1s;
 /***========================SKILLS SECTION STYLES========================***/
 
 .skills {
-background-image: url('Components/assets/web.jpg');
+background-image: linear-gradient(to bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.5) 100%), url('Components/assets/web.jpg');
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
@@ -244,9 +245,11 @@ width: 25%;
 padding-right: 20px;
 padding-left: 20px;
 }
+
 .fa-laptop-code, .fa-address-card, .fa-handshake, .fa-running {
 font-size: 6rem;
 padding-bottom: 5px;
+color: #E3E4E5
 }
 .fa-laptop-code:hover, .fa-address-card:hover, .fa-handshake:hover, .fa-running:hover {
 display: inline-block;
@@ -260,6 +263,29 @@ font-weight: 600;
 }
 .skillsP {
 margin: 0px; 
+}
+
+.asteroid {
+margin: 6em 10.2%;
+}
+.asteroid_title {
+text-align: center;
+}
+.asteroid_img{
+width: 70%;
+float: left;
+box-shadow: 0 1px 6px 0 rgba(32,33,36,0.5);
+margin: 0 20px 7px 0;
+}
+.asteroid_subtitle {
+letter-spacing: 1.5px;
+line-height: 28px;
+}
+.img_btn {
+display: block;
+margin: 12px auto;
+text-align: center;
+border-radius: 2px;
 }
 
 /***========================RESUME STYLES========================***/
@@ -298,16 +324,22 @@ ul {
         padding-inline-start: 16px;
 }
 article {
-margin: 2rem;
+padding: 2rem;
 text-align: center;
+background: #FFF;
 }
 .cv {
-padding-top: 1rem;
-padding-bottom: 1rem;
-margin-top: 5rem;
-margin: 8rem 10rem 1rem 10rem;
--webkit-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+background-image: linear-gradient(to bottom,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.5) 100%), url('Components/assets/web-development-t.jpg');
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+/*padding-top: 1rem;
+padding-bottom: 1rem;*/
+padding-top: 5rem;
+padding: 8rem 10rem 1rem 10rem;
+/*-webkit-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);*/
 }
 .cvLink {
 color: #71c2cc;
@@ -322,7 +354,7 @@ display: flex;
 -webkit-box-pack: center;
     -ms-flex-pack: center;
         justify-content: center;
-margin-bottom: 10rem;
+margin: 2rem 0rem;
 text-decoration: none;
 }
 .btn:hover {
@@ -403,6 +435,7 @@ padding: 0px;
 .footer {
 height: 4rem;
 color: white;
+background: black;
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
@@ -437,7 +470,7 @@ height: 37rem;
 height: 41rem;
 }
 .cv {
-margin: 8rem 5rem 1rem 5rem;
+padding: 8rem 1.5rem .5rem;
 }
 .cardLeft, .cardRight {
 margin-left: 5rem;
@@ -586,12 +619,7 @@ text-align: center;
 font-size: 8rem;
 }
 .button {
-margin-bottom: 5rem;
-}
-.cv {
-margin-top: 5rem;
-margin-right: 2rem;
-margin-left: 2rem;
+margin: 2rem 0rem;
 }
 article {
 margin: 1.5rem;
@@ -620,7 +648,16 @@ height: 120rem;
 }
 }
 
-/***========================MOBILE STYLES @ 600px WIDTH========================***/
+/***========================MOBILE STYLES @ 640px WIDTH========================***/
+@media screen and (max-width: 640px) {
+.asteroid_img{
+width: 100%;
+float: none;
+}
+.asteroid_subtitle {
+text-align: justify;
+}
+}
 
 @media screen and (max-width: 600px) {
 .projectsBackground {
@@ -628,10 +665,6 @@ height: 120rem;
 }
 .skillsP {
 font-size: 15px;
-}
-.cv {
-margin-right: 1rem;
-margin-left: 1rem;
 }
 article {
 margin: 1rem;
