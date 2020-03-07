@@ -69,7 +69,7 @@ class Resume extends Component {
 
 							<strong>Personal Project</strong><hr />
 
-<section><p><strong>www.newsapptoday.com</strong></p></section>
+<section><p><strong><a href='https://www.newsapptoday.com/' target='_blank' rel="noopener noreferrer">www.newsapptoday.com</a></strong></p></section>
 
 <div className="cv-ul-left">
 <p>

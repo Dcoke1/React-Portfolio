@@ -50,6 +50,7 @@ class Asteroid extends Component {
 						onCloseRequest={() => this.setState({ isOpen: false })}
 						imageTitle={data.title}
 						imagePadding={40}
+						
 					/>
 				)}
 			</div>

@@ -12,7 +12,7 @@ class MobileAbout extends Component {
 					<div className="mobileBackground">
 						<div className="mobileSkills">
 							<div className="mobileSub mobileSubL">
-								<i class="fas fa-laptop-code"></i>
+								<i className="fas fa-laptop-code"></i>
 								<span className="skillsSpan">UI/UX</span>
 								<p className="skillsP">
 									UX design is all about understanding the
@@ -25,7 +25,7 @@ class MobileAbout extends Component {
 								</p>
 							</div>
 							<div className="mobileSub">
-								<i class="far fa-address-card"></i>
+								<i className="far fa-address-card"></i>
 								<span className="skillsSpan">
 									Responsive Design
 								</span>
@@ -41,7 +41,7 @@ class MobileAbout extends Component {
 								</p>
 							</div>
 							<div className="mobileSub">
-								<i class="far fa-handshake"></i>
+								<i className="far fa-handshake"></i>
 								<span className="skillsSpan">Team Player</span>
 								<p className="skillsP">
 									Good teamwork provides a company with a
@@ -54,7 +54,7 @@ class MobileAbout extends Component {
 								</p>
 							</div>
 							<div className="mobileSub">
-								<i class="fas fa-running"></i>
+								<i className="fas fa-running"></i>
 								<span className="skillsSpan">Versatile</span>
 								<p className="skillsP">
 									Over 3 years of Front-end development and
