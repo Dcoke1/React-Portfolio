@@ -334,12 +334,8 @@ background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-/*padding-top: 1rem;
-padding-bottom: 1rem;*/
 padding-top: 5rem;
 padding: 8rem 10rem 1rem 10rem;
-/*-webkit-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
-box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);*/
 }
 .cvLink {
 color: #71c2cc;
@@ -470,7 +466,7 @@ height: 37rem;
 height: 41rem;
 }
 .cv {
-padding: 8rem 1.5rem .5rem;
+padding: 8rem 1rem .5rem;
 }
 .cardLeft, .cardRight {
 margin-left: 5rem;
@@ -621,9 +617,6 @@ font-size: 8rem;
 .button {
 margin: 2rem 0rem;
 }
-article {
-margin: 1.5rem;
-}
 .cardLeft, .cardRight {
 display: -webkit-box;
 display: -ms-flexbox;
@@ -666,9 +659,6 @@ height: 120rem;
 .skillsP {
 font-size: 15px;
 }
-article {
-margin: 1rem;
-}
 .cardLeftP p, .cardRightP p {
 font-size: 18px;
 }
@@ -681,7 +671,7 @@ font-size: 18px;
 height: 10vmin;
 }
 .material-icons {
-font-size: 38px;
+display: none;
 }
 ul {
 -webkit-padding-start: 16px;
@@ -699,13 +689,16 @@ font-size: 2.5rem;
 padding-top: 64px;
 }
 .cv p {
-font-size: 15px;
-}
-.cv li {
 font-size: 13px;
 }
+.cv li {
+font-size: 11px;
+}
 .btn {
-font-size: 15px;
+font-size: 13px;
+}
+.cv {
+padding: 8rem .5rem .5rem;
 }
 .projectsBackground {
 height: 125rem;
@@ -721,12 +714,6 @@ width: 65vmin;
 }
 #about {
 padding-top: 64px;
-}
-.cv p {
-font-size: 14px;
-}
-.cv li {
-font-size: 12px;
 }
 .projectsBackground {
 height: 130rem;
