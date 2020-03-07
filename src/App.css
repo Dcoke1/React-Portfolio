@@ -495,7 +495,7 @@ display: none;
 display: none;
 }
 .material-icons {
-font-size: 34px;
+display: none;
 }
 header {
 margin: 0 !important;
