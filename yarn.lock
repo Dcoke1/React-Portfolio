@@ -1385,13 +1385,24 @@
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@nodelib/fs.stat/-/fs.stat-1.1.3.tgz#2b5a3ab3f918cca48a8c754c08168e3f03eba61b"
 
+"@popperjs/core@^2.0.0":
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.3.3.tgz#8731722aeb7330e8fd9eb5d424be6b98dea7d6da"
+
 "@restart/context@^2.1.4":
   version "2.1.4"
   resolved "https://registry.yarnpkg.com/@restart/context/-/context-2.1.4.tgz#a99d87c299a34c28bd85bb489cb07bfd23149c02"
 
-"@restart/hooks@^0.3.11", "@restart/hooks@^0.3.12":
+"@restart/hooks@^0.3.12":
   version "0.3.21"
   resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.3.21.tgz#5264d12019ffb844dc1fc44d55517ded7b580ee2"
+
+"@restart/hooks@^0.3.21":
+  version "0.3.22"
+  resolved "https://registry.yarnpkg.com/@restart/hooks/-/hooks-0.3.22.tgz#bb7e27c832bf576f56977d0a0b8b9d8ccee877b8"
+  dependencies:
+    lodash "^4.17.15"
+    lodash-es "^4.17.15"
 
 "@svgr/babel-plugin-add-jsx-attribute@^4.0.0":
   version "4.0.0"
@@ -1561,9 +1572,16 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react@*", "@types/react@^16.8.23", "@types/react@^16.9.11":
+"@types/react@*", "@types/react@^16.9.11":
   version "16.9.24"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.24.tgz#9896c3ce0cf0d67beb3f9a35049b4a37679de30d"
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
+"@types/react@^16.9.23":
+  version "16.9.34"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.34.tgz#f7d5e331c468f53affed17a8a4d488cd44ea9349"
   dependencies:
     "@types/prop-types" "*"
     csstype "^2.2.0"
@@ -5934,6 +5952,10 @@ locate-path@^3.0.0:
     p-locate "^3.0.0"
     path-exists "^3.0.0"
 
+lodash-es@^4.17.15:
+  version "4.17.15"
+  resolved "https://registry.yarnpkg.com/lodash-es/-/lodash-es-4.17.15.tgz#21bd96839354412f23d7a10340e5eac6ee455d78"
+
 lodash._reinterpolate@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
@@ -5987,7 +6009,7 @@ lodash.uniq@^4.5.0:
   version "4.17.11"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
 
-lodash@^4.17.14, lodash@^4.17.4:
+lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.4:
   version "4.17.15"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
 
@@ -6076,8 +6098,8 @@ md5.js@^1.3.4:
     safe-buffer "^5.1.2"
 
 mdbreact@^4.16.0:
-  version "4.25.3"
-  resolved "https://registry.yarnpkg.com/mdbreact/-/mdbreact-4.25.3.tgz#5ce889f32b4554b111d5edfb8e6291cff9a51935"
+  version "4.25.6"
+  resolved "https://registry.yarnpkg.com/mdbreact/-/mdbreact-4.25.6.tgz#350cd2d0904e7bafa57a309c342284ff5297456e"
   dependencies:
     "@date-io/moment" "1.3.5"
     "@fortawesome/fontawesome-free" "^5.12.0"
@@ -6998,7 +7020,7 @@ pnp-webpack-plugin@1.2.1:
   dependencies:
     ts-pnp "^1.0.0"
 
-popper.js@^1.14.1, popper.js@^1.14.4, popper.js@^1.15.0, popper.js@^1.16.0:
+popper.js@^1.14.1, popper.js@^1.14.4, popper.js@^1.16.0:
   version "1.16.1"
   resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
 
@@ -7834,20 +7856,19 @@ react-app-polyfill@^1.0.1:
     whatwg-fetch "3.0.0"
 
 react-bootstrap@^1.0.0-beta.9:
-  version "1.0.0-beta.17"
-  resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-1.0.0-beta.17.tgz#09d4789633b2fb24d408fa493b4a80a496e87c82"
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/react-bootstrap/-/react-bootstrap-1.0.0.tgz#ed812810205e75b8e4a84b9514d79de090cdc627"
   dependencies:
     "@babel/runtime" "^7.4.2"
     "@restart/context" "^2.1.4"
-    "@restart/hooks" "^0.3.11"
-    "@types/react" "^16.8.23"
+    "@restart/hooks" "^0.3.21"
+    "@types/react" "^16.9.23"
     classnames "^2.2.6"
     dom-helpers "^5.1.2"
     invariant "^2.2.4"
-    popper.js "^1.16.0"
     prop-types "^15.7.2"
     prop-types-extra "^1.1.0"
-    react-overlays "^2.1.0"
+    react-overlays "^3.0.1"
     react-transition-group "^4.0.0"
     uncontrollable "^7.0.0"
     warning "^4.0.3"
@@ -7889,7 +7910,7 @@ react-dev-utils@^9.0.1:
     strip-ansi "5.2.0"
     text-table "0.2.0"
 
-react-dom@^16.12.0, react-dom@^16.8.6:
+react-dom@^16.12.0:
   version "16.13.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.13.0.tgz#cdde54b48eb9e8a0ca1b3dc9943d9bb409b81866"
   dependencies:
@@ -7897,6 +7918,15 @@ react-dom@^16.12.0, react-dom@^16.8.6:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
     scheduler "^0.19.0"
+
+react-dom@^16.8.6:
+  version "16.13.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.13.1.tgz#c1bd37331a0486c078ee54c4740720993b2e0e7f"
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    scheduler "^0.19.1"
 
 react-error-overlay@^5.1.6:
   version "5.1.6"
@@ -7967,14 +7997,14 @@ react-numeric-input@2.2.3:
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/react-numeric-input/-/react-numeric-input-2.2.3.tgz#4bf5918c3eafed851a80df1eb992d941002bb552"
 
-react-overlays@^2.1.0:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/react-overlays/-/react-overlays-2.1.1.tgz#ffe2090c4a10da6b8947a1c7b1a67d0457648a0d"
+react-overlays@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/react-overlays/-/react-overlays-3.0.1.tgz#0a007d8d8b97d8e85bb23b2fbe2fb336d82422db"
   dependencies:
     "@babel/runtime" "^7.4.5"
+    "@popperjs/core" "^2.0.0"
     "@restart/hooks" "^0.3.12"
     dom-helpers "^5.1.0"
-    popper.js "^1.15.0"
     prop-types "^15.7.2"
     uncontrollable "^7.0.0"
     warning "^4.0.3"
@@ -8129,9 +8159,17 @@ react-transition-group@^2.2.1, react-transition-group@^2.5.3:
     prop-types "^15.6.2"
     react-lifecycles-compat "^3.0.4"
 
-react@^16.12.0, react@^16.8.6:
+react@^16.12.0:
   version "16.13.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.13.0.tgz#d046eabcdf64e457bbeed1e792e235e1b9934cf7"
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+
+react@^16.8.6:
+  version "16.13.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.13.1.tgz#2e818822f1a9743122c063d6410d85c1e3afe48e"
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -8555,6 +8593,13 @@ saxes@^3.1.9:
 scheduler@^0.19.0:
   version "0.19.0"
   resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.19.0.tgz#a715d56302de403df742f4a9be11975b32f5698d"
+  dependencies:
+    loose-envify "^1.1.0"
+    object-assign "^4.1.1"
+
+scheduler@^0.19.1:
+  version "0.19.1"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.19.1.tgz#4f3e2ed2c1a7d65681f4c854fa8c5a1ccb40f196"
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
