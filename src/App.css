@@ -271,6 +271,9 @@ margin: 6em 10.2%;
 .asteroid_title {
 text-align: center;
 }
+.asteroid_img_container {
+width: 650px;
+}
 .asteroid_img{
 width: 70%;
 float: left;
@@ -525,7 +528,7 @@ margin: 0 auto 0 0;
         flex-direction: row-reverse;
 }
 .App-logo-span {
-font-size: 28px;
+font-size: 28   px;
 }
 .mdl-layout__header .mdl-layout__drawer-button {
 display: none;
@@ -643,6 +646,12 @@ font-size: 20px;
 }
 .projectsBackground {
 height: 128rem;
+}
+.asteroid_img_container {
+width: auto;
+}
+.asteroid_img {
+width: 100%;
 }
 }
 

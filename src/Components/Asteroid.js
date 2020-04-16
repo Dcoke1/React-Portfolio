@@ -29,11 +29,13 @@ class Asteroid extends Component {
 			<div className="asteroid">
 				<h3 className="asteroid_name img_btn">{data.title}</h3>
 				<p className="img_btn">By {data.copyright}</p>
+				<div className="asteroid_img_container">
 				<img
 					className="asteroid_img"
 					src={data.hdurl}
 					alt={data.media_type}
 				/>
+				</div>
 				<p className="asteroid_subtitle">{data.explanation}</p>
 				<button className="img_btn btn-warning"
 					type="button"
